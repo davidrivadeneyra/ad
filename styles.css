@@ -1,0 +1,70 @@
+body {
+    background-color:  #0A0D0F;
+    
+}
+
+.content {
+    isolation: isolate; 
+    background-color:  #0A0D0F;
+    height: 1500px;
+    display: block;
+}
+
+
+.light {
+    mix-blend-mode: plus-lighter;
+}
+
+
+.tiny-circles {
+    mix-blend-mode: plus-lighter;
+}
+
+.circle {
+    fill: #F5953A;
+  
+}
+
+.orbit {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+
+.orbit-big {
+    transform-origin: center;
+    animation: girar-big 85s linear infinite;
+}
+
+.orbit-medium {
+    transform-origin: center;
+    animation: girar-medium 75s linear infinite;
+
+}
+
+.orbit-small {
+    transform-origin: center;
+    animation: girar-big 65s linear infinite;
+}
+.orbit-smaller {
+    transform-origin: center;
+    animation: girar-medium 55s linear infinite;
+}
+
+@keyframes girar-big {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes girar-medium {
+    to {
+        transform: rotate(-1turn);
+    }
+}
+
+.ecommerce {
+    scale: .9;
+    transform-origin: 50% 50%; 
+}
